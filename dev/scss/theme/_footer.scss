@@ -1,0 +1,79 @@
+/**
+layaut and general styles
+ */
+.footer{
+    background: darken($white,5);
+    color: $color-1;
+    ul{
+        @include menuRest;
+    }
+    &__content{
+        padding: 2rem 0;
+        @include edContainer;
+        &__item{
+            &:nth-child(1){
+                @include edItem(100,100,25);
+            }
+            &:nth-child(2){
+                @include edItem(100,100,50);
+            }
+            &:nth-child(3){
+                @include edItem(100,100,25);
+            }
+        }
+    }
+}
+
+
+
+.copyright{
+    background: darken($color-1,15);
+    p{
+        @include edContainer;
+        @include flexCenter;
+        font-weight: 100;
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0.3rem 0;
+    }
+}
+
+
+
+
+.follow__socialMedia{
+    display: flex;
+    li{
+        margin: 0.5rem;
+    }
+    a{
+        color: $color-1;
+        position: relative;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        &:hover,
+        &:active{text-decoration: none;}
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            background: lighten($color-2,30);
+            height: 2rem;
+            width: 2rem;
+            border-radius: 100%;
+        }
+        &::before{
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: $white;
+        }
+    }
+    .icon-facebook::after{background: #3b5998;}
+    .icon-twitter::after{background: #40cbf9;}
+    .icon-youtube-play::after{background: #e52d27;}
+}

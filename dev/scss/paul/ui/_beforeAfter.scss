@@ -1,0 +1,12 @@
+@mixin beforeAfter($x:false){
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transition: all .2s;
+  @if $x == true {
+    left: 0;
+    top: 0;
+    z-index: 20;
+  }
+}

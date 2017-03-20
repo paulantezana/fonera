@@ -1,0 +1,60 @@
+body{
+    font-family: $font-website;
+    font-size: $fz-website ;
+    color: $color-font;
+    line-height: $line-height;
+    background: $bg;
+}
+iframe,
+video,
+img{
+    height: auto;
+    max-width: 100%;
+}
+ a{
+     color: darken($color-2,05);
+     &:hover{
+         color: $color-2;
+     }
+ }
+ [class*="icon-"]{
+     &:before{
+         position: relative;
+         top: 2px;
+         margin-right: 5px;
+     }
+ }
+/*_________web_site_________titles________*/
+
+
+/**
+ * STYLE CSS INPUTS
+*/
+input,
+textarea{
+    line-height: 1.8rem;
+    padding: 0 0.6rem;
+    border-radius: 2px;
+    border: 1px solid $gray-light;
+    color: darken($color-1,10);
+    font-family: $font-website;
+    &:focus{
+        outline: none;
+        border: 1px solid $color-2;
+    }
+}
+textarea{
+    line-height: 1rem;
+    padding: 0.5rem;
+}
+[type="submit"]{
+    border: none;
+    color: darken($gray,10);
+    cursor: pointer;
+    padding: 0 2rem;
+    &:hover,
+    &:active{
+        background: $color-1;
+        color: $white-darck;
+    }
+}

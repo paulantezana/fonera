@@ -1,0 +1,86 @@
+.nav-container{
+    @include to(l){
+        width: 100%;
+    }
+}
+.main-menu{
+    @include edMenu(l);
+    @include from(l){
+        ul{
+            z-index: 488;
+        }
+    }
+    a{
+        background: $color-1;
+        margin:  0  0.2rem;
+        display: block;
+        color: $white;
+        line-height: 2rem;
+        &:hover{
+            background: darken($color-1,7);
+        }
+    }
+    @include to(l){
+        max-height: 0;
+        overflow: hidden;
+    }
+    transition: all .4s;
+}
+
+
+.menu-toggle{
+    max-height: 5000px;
+}
+/**
+Toogle Menu ----------------------------------------------
+ */
+$width: 1.6rem;
+$height: 3px;
+.toogleMenu{
+    @include from(l){
+        display: none;
+    }
+    height: $height*6.4;
+    width: $width;
+    right: 0.5rem;
+    top: 1.1rem;
+    position: absolute;
+    cursor: pointer;
+    z-index: 500;
+    transition: all .4s;
+    &:before,
+    &:after{
+        @include beforeAfter();
+        width: 100%;
+        height: $height;
+        background: $white_darck;
+        transition: all .4s;
+    }
+    &:before{
+        top: 0;
+        box-shadow: 0 (($height*6.4)/2.4) $white_darck;
+    }
+    &:after{
+        bottom: 0;
+    }
+}
+
+.toggleCros{
+    top: 1rem;
+    right: 1rem;
+    &:before,
+    &:after{
+        left: 0;
+        top: 0;
+    }
+    transform: rotateZ(360deg);
+    &:before{
+        box-shadow: none;
+        transform:  translateY($height*2.6) rotateZ(45deg);
+    }
+    &:after{
+        transform: translateY($height*2.6) rotateZ(-45deg);
+    }
+}
+
+

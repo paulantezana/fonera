@@ -1,0 +1,33 @@
+.header{
+    background: $color-1;
+    transition: all 8s;
+    &__content{
+        @include edContainer;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.2rem 0;
+        .identity,
+        .menu-nav{
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+
+
+/**
+*
+*
+*
+*
+ */
+.identity{
+    color: $white;
+    display: block;
+    &:hover{text-decoration: none}
+    img{
+        display: block;
+        max-height: 3rem;
+    }
+}

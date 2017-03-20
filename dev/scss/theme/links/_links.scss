@@ -1,0 +1,37 @@
+.externalLinks{
+  p{margin: 0;}
+  img{display: block;}
+}
+.externalLinks{
+  position: relative;
+  width: 48%;
+  @include from(xs){width: 31.8%}
+  @include from(m){width: 23.8%}
+  @include from(l){width: 19%;}
+  margin-bottom: 10px;
+  &__title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    color: transparent;
+    transition: all .4s;
+    font-weight: normal;
+    font-size: 0.9rem;
+  }
+  &:before{
+    @include beforeAfter();
+    left: 100%;
+    background: rgba($black,.5);
+  }
+  overflow: hidden;
+  &:hover{
+    .externalLinks__title{color: $white;}
+    &:before{
+      left: 0;
+    }
+  }
+}

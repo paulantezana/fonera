@@ -1,0 +1,30 @@
+.prices{
+    &__header,
+    &__main{
+        @include edContainer;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+/**
+    * ********************************************************
+    * styles deccoration
+    *
+    */
+
+.prices{
+    &__header{
+        h2,p{text-align: center;}
+    }
+    .message{
+        padding: 2rem 0;
+        font-size: 2rem;
+    }
+    .dowloand{
+        //@include btn;
+        margin: 2rem 0;
+    }
+}
+

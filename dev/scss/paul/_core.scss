@@ -1,0 +1,50 @@
+/*//== Config  ED-Grid == //*/
+    $cssCore    : false;
+    $cssHelpers : false;
+    $devMode    : false;
+    /*************************/
+    $max-width : 1200px;
+    /*************************/
+    // $gutter : em(15px); // Seperación horizontal entre items (*2)
+    /*************************/
+    $breakpoints : (
+        s  : 0,
+        xs : 450px,
+        m  : 640px,
+        l  : 1024px,
+        xl : 1440px
+    );
+    /*************************/
+    $red            : crimson;
+    $blue           : #007ACC;
+    $yellow         : orange;
+    $purple         : purple;
+    $green          : green;
+    /*************************/
+    $white          : #fff;
+    $white_darck    : #eee;
+
+    $gray_light     : #aaa;
+    $gray           : #777;
+    $gray_darck     : #555;
+
+    $black_light    : #1b2024;
+    $black          : #000;
+
+
+/*//== Config  Proyect == //*/
+    /************ Color ************/
+    $color-1    : seagreen;
+    $color-2    : lighten($color-1,10);
+    $color-3    : yellow;
+    $color-4    : #FF7777;
+
+    $bg         : #F5F5F5;
+
+
+/*//== Import ED-Grid == //*/
+    @import "ed-grid";
+
+/*//== Import Paul-Ui == //*/
+    @import "ui/menuRest";
+    @import "ui/beforeAfter";

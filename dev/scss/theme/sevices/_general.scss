@@ -1,0 +1,10 @@
+.servicesContent{
+    @include edContainer;
+    margin: 3rem auto;
+    .servicesInfo{
+        @include edItem(100,60,70);
+    }
+    .methods-container{
+        @include edItem(100,40,30);
+    }
+}

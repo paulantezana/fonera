@@ -1,0 +1,61 @@
+/*//== Import Core and Config Font == //*/
+    @import "paul/core";
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700');
+    $font-website   : 'Open Sans', sans-serif;
+    $fz-title       : 2rem;
+    $fz-subTitle    : 1rem;
+    $fz-website     : 0.9rem;
+    $line-height    : 1.3rem;
+    $color-font     : #6D6D6D;    // font Color General
+
+/*//== Style General == //*/
+    @import "base/base";
+    @import "layaut/layaut";
+
+/*----------------------------------------*/
+/*//==//==//== Start Proyect ==//==//==//*/
+/*----------------------------------------*/
+    //-- header --//
+    @import "theme/header";
+    @import "theme/menu";
+    @import "theme/eventFonera";
+    // -- sidebar --//
+    @import "theme/sidebar";
+    //-- footer --//
+    @import "theme/footer";
+    // -- home -- //
+    @import "theme/home/blog";
+    // -- Single Post -- //
+    @import "theme/postSingle";
+    // -- Comments -- //
+    @import "theme/comments";
+    // -- Advertising --//
+    @import "theme/advertising/advertising";
+    // -- Lis //
+    @import "theme/links/links";
+// -- services -- //
+    @import "theme/sevices/general";
+    @import "theme/sevices/methods";
+    @import "theme/sevices/plataforma";
+    @import "theme/sevices/precentation";
+    @import "theme/sevices/prices";
+    @import "theme/sevices/questions";
+
+
+
+
+    // -- NEWS -- //
+        @import "theme/news/news";
+    // -- MAGAZINE -- //
+        @import "theme/magazine/magazine";
+    // -- SINGLE -- //
+        @import "theme/single/coment";
+    // -- Contact -- //
+        .contact--page{
+            span,
+            input,
+            textarea{
+                display: block;
+                width: 100%;
+            }
+        }

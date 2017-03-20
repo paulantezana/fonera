@@ -1,0 +1,60 @@
+/*
+    Styles title sidebar --------------------------------------
+*/
+.sidebar{
+  background: $white;
+  border: 1px solid darken($white,10);
+  &__title{
+    padding: 0.6rem;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    background: $color-2;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+}
+
+
+/**
+    general styles sidebar -------------------------------------
+*/
+.sidebar{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      border-top: 1px dashed darken($white,12);
+      padding: 0 0 0 0.5rem;
+    }
+    a{
+      line-height: 3em;
+      color: inherit;
+      &:hover,
+      &:active{
+        color: $color-2;
+      }
+    }
+  }
+}
+
+
+/**
+    especial styles top categories sidebar ------------------------
+*/
+//.sidebar{
+//  section{
+//    &>ul>li>a{
+//      display: block;
+//      background: $color-1;
+//      color: $white;
+//      text-transform: uppercase;
+//      &:hover,
+//      &:active{
+//        background: $color-2;
+//      }
+//    }
+//  }
+//}

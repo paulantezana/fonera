@@ -1,0 +1,50 @@
+.methods{
+    border: 1px solid darken($white,10);
+    border-radius: 5px;
+    overflow: hidden;
+    &__header{
+        background: $color-3;
+        padding: 0.7rem;
+        h2,h3,h4{
+            margin: 0;
+        }
+    }
+    &__list{
+        @include menuRest;
+        li{
+            padding: 0.5rem 1rem;
+        }
+        p{
+            margin: 0;
+        }
+        h4{
+            border-bottom: 1px solid darken($white,10);
+            padding-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .adressEspecification{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+    }
+}
+
+.methods{
+    .banco-logo{
+        max-width: 4rem;
+        display: block;
+        &-container{
+            display: flex;
+            padding: 0.5rem 0;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid darken($white,10);
+        }
+    }
+}
+
+/**
+* 
+*
+*/

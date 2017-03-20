@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.footer{
+    margin-top: auto;
+}
+
+// content page layaut
+.main__content,
+.main__header{
+    @include edContainer;
+    &__item{
+        &:nth-child(1){
+            @include edItem(100,60,75);
+        }
+        &:nth-child(2){
+            @include edItem(100,40,25);
+        }
+    }
+}
+.main__content{
+    margin: 3rem auto;
+}
+.main__content--full{
+    .main__content__item{
+        @include edItem(100);
+    }
+}
+.main__content--50{
+    .main__content__item{
+        @include edItem(100,50);
+    }
+}

@@ -1,0 +1,11 @@
+.questions{
+    @include edContainer;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    &__title,
+    &__text{
+        text-align: center;
+        margin: 0;
+    }
+}

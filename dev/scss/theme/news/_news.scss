@@ -1,0 +1,26 @@
+.news{
+  &-container{
+    @include grid('.news',(1,2,4),1rem);
+  }
+  background: $white;
+}
+//****************************************** Decoration
+.news{
+  box-shadow: 1px 1px  1px 0 darken($white,10);
+  transition: all .4s;
+  &:hover{
+    box-shadow: 1px 1px 20px 0 darken($white,10);
+    transform: translateY(-5px);
+  }
+  &__link{
+    color: inherit;
+    display: block;
+    padding: 0;
+  }
+
+  &__title{
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0 0.5rem;
+  }
+}

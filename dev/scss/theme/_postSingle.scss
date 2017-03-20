@@ -1,0 +1,40 @@
+.postSingle{
+  background: $white;
+  border: 1px solid $white_darck;
+  padding: 1rem;
+  &__title{
+    color: $color-1;
+  }
+  &__content{
+    iframe,
+    video{
+      display: block;
+    }
+  }
+  &__footer{
+    border-top: 1px solid $white_darck;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    &__item{
+      margin: 0 1rem;
+      a{color: inherit}
+    }
+  }
+  &__navigation{
+    background: $white;
+    border: 1px solid $white_darck;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  &__edit{
+    background: $color-4;
+    display: inline-block;
+    a{  color: $white; display: inline-block}
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+}

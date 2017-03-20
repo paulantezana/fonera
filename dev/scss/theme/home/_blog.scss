@@ -1,0 +1,177 @@
+.blogSearch{
+    div{
+        display: flex;
+        align-items: center;
+    }
+    label{
+        display: none;
+    }
+    input{
+        margin-bottom: 1rem;
+        line-height: 2.5rem;
+        display: block;
+        border: 1px solid $color-2;
+        border-radius: 0;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    [type="text"]{
+        border-radius: 7px 0 0 7px;
+        flex: 1 1 auto;
+    }
+    [type="submit"]{
+        border-radius: 0 7px 7px 0;
+        background: $color-2;
+        color: $white_darck;
+    }
+}
+
+
+
+
+
+/*************************************************
+    * General estiles post
+    *
+    */
+.post{
+    border: 1px solid $white_darck;
+    background: $white;
+    margin: 2rem 0;
+    position: relative;
+}
+/*************************************************
+    * End General Styles
+    *
+    */
+
+.post{
+    &__header{
+        padding: 0.5rem;
+    }
+    &__content{
+        padding: 0.5rem;
+        @include from(l){
+            padding: 0.4rem 0;
+        }
+    }
+}
+
+
+
+
+/*************************************************************
+ * Layout
+ *
+ */
+
+.post{
+    &__main{
+        @include from(l){
+            display: flex;
+        }
+    }
+    &__header{
+        @include from(l){
+            flex: 0 0 15rem;
+        }
+    }
+    &__content{
+        @include from(l){
+            flex: 1 1 auto;
+        }
+    }
+}
+
+
+/*************************************************************
+ * Style Content Post
+ *
+ *
+ */
+
+.post{
+    &__title{
+        margin: 0;
+        font-size: 1rem;
+        a{
+            color: $color-1;
+        }
+        text-transform: uppercase;
+    }
+    &__text{
+        p{margin: 0;}
+    }
+}
+
+
+
+
+
+/*************************************************
+    * Styles In footer
+    *
+    */
+.post{
+    &__footer{
+        padding: 0.5rem 0.5rem;
+        border-top: 1px solid $white_darck;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .post-categories{
+            @include menuRest();
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                padding: 0 0.4rem;
+            }
+        }
+        &__item{
+            margin: 0 1.5rem;
+            color: $gray;
+            &:hover{color: $gray}
+            a{
+                color: inherit;
+            }
+        }
+    }
+}
+
+.paginationBlog{
+    @include edContainer;
+    @include flexCenter;
+    margin: 2rem auto;
+    a,
+    span{
+        display: block;
+        padding: 0.4rem 0.9rem;
+        background: darken($white_darck,2);
+        color: $gray_darck;
+        border: 1px solid darken($white_darck,15);
+        &:hover{
+            text-decoration: none;
+            background: $color-1;
+            color: $white_darck;
+            border: 1px solid darken($color-1,5);
+        }
+    }
+    span{
+        background: $color-2;
+        border: 1px solid darken($color-1,5);
+    }
+}
+
+
+
+/** ==========================================================
+/////////////// styles decoration blog ///////////////////////
+ ============================================================*/
+.post{
+    transition: all .4s;
+    &:hover,
+    &:active{
+        transform: translateY(-4px);
+        box-shadow: 2px 2px 15px 0 rgba($gray,.1);
+    }
+}
