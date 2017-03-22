@@ -6,7 +6,7 @@
      *
      *
      */
-//        require_once get_template_directory . '/inc/customPostTypes/fonera-advertising.php';
+        require_once get_template_directory() . '/inc/customPostTypes/fonera-advertising.php';
         require_once get_template_directory() . '/inc/customPostTypes/fonera-links.php';
         require_once get_template_directory() . '/inc/customPostTypes/fonera-magazine.php';
         require_once get_template_directory() . '/inc/customPostTypes/fonera-news.php';

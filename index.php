@@ -4,7 +4,7 @@
     '<div class="main">
         <div class="main__header">');
             // Content Page Header ------------------------------------------
-                wd_slider(2);
+                // wd_slider(2);
             // End Content Page Header --------------------------------------
         printf('</div>
         <div class="main__content">
